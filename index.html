@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Développeur Back & Administrateur Réseau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">À propos</a>
+                    <a href="#formation" class="text-gray-600 hover:text-primary transition-colors">Formation</a>
+                    <a href="#skills" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                    <a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projets</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <i class="fas fa-bars text-2xl"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hidden checkbox for menu toggle -->
+    <input type="checkbox" id="menu-toggle" class="hidden">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary">
+                <img src="images/ma_phtoto.jpg" alt="Photo de profil" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                <span class="gradient-text">Administrateur Système & Réseau</span>
+                <br>
+                <span class="text-dark">Développeur Backend</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Je transforme des idées en solutions numériques innovantes, combinant expertise technique et vision stratégique.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors hover-scale">
+                    Me contacter
+                </a>
+                <a href="#projects" class="border-2 border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors hover-scale">
+                    Voir mes projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-green-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">À propos de moi</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+                <p class="mb-6">
+                    Administrateur Système & Réseau passionné, je combine expertise technique en infrastructure et développement backend pour créer des solutions robustes et sécurisées. Mon approche allie rigueur technique et vision stratégique pour optimiser les performances et la sécurité des systèmes.
+                </p>
+                <p>
+                    Spécialisé dans l'automatisation réseau avec Ansible, la gestion d'équipements Cisco et FortiGate, ainsi que le développement backend avec Python (Flask, FastAPI, Django) et Java (Spring Boot), je m'efforce de créer des solutions qui répondent aux besoins des utilisateurs tout en respectant les meilleures pratiques de l'industrie.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-20 bg-gradient-to-r from-yellow-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Formation</h2>
+            
+            <!-- Diplômes -->
+            <div class="max-w-3xl mx-auto mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Diplômes</h3>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Ingénieur des travaux Information</h4>
+                                <p class="text-gray-600">Option Administration Système et Réseau</p>
+                                <p class="text-primary">IAI-TOGO</p>
+                            </div>
+                            <span class="text-gray-500">2021-2024</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">BAC Série Générale</h4>
+                            </div>
+                            <span class="text-gray-500">2020-2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="max-w-3xl mx-auto mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Certifications</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-cisco text-3xl text-blue-600 mr-4"></i>
+                            <h4 class="text-xl font-semibold">CCNA 1</h4>
+                        </div>
+                        <p class="text-gray-600">Introduction aux Réseaux</p>
+                        <p class="text-primary">Cisco Networking Academy</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-cisco text-3xl text-blue-600 mr-4"></i>
+                            <h4 class="text-xl font-semibold">CCNA 2</h4>
+                        </div>
+                        <p class="text-gray-600">Switching, Routing, and Wireless Essentiels</p>
+                        <p class="text-primary">Cisco Networking Academy</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-python text-3xl text-blue-600 mr-4"></i>
+                            <h4 class="text-xl font-semibold">Introduction to Python</h4>
+                        </div>
+                        <p class="text-primary">Sololearn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Langues -->
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Langues</h3>
+                <div class="flex justify-center space-x-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+                        <i class="fas fa-language text-3xl text-primary mb-4"></i>
+                        <h4 class="text-xl font-semibold">Français</h4>
+                        <p class="text-gray-600">Langue maternelle</p>
+                        <p class="text-primary font-semibold mt-2">Niveau C1</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+                        <i class="fas fa-language text-3xl text-primary mb-4"></i>
+                        <h4 class="text-xl font-semibold">Anglais</h4>
+                        <p class="text-gray-600">Professionnel</p>
+                        <p class="text-primary font-semibold mt-2">Niveau B2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-r from-red-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Mes Compétences</h2>
+            
+            <!-- Development Skills -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Développement</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-html5 text-4xl text-orange-500 mb-4"></i>
+                        <h4 class="font-semibold">HTML5</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                        <p class="text-orange-500 font-semibold mt-2">65%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-css3-alt text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold">CSS3 & Tailwind</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <p class="text-blue-500 font-semibold mt-2">60%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-js text-4xl text-yellow-500 mb-4"></i>
+                        <h4 class="font-semibold">JavaScript</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 50%"></div>
+                        </div>
+                        <p class="text-yellow-500 font-semibold mt-2">50%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold">Python</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <p class="text-blue-600 font-semibold mt-2">85%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-java text-4xl text-red-500 mb-4"></i>
+                        <h4 class="font-semibold">Java</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <p class="text-red-500 font-semibold mt-2">75%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-php text-4xl text-purple-500 mb-4"></i>
+                        <h4 class="font-semibold">PHP</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-purple-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <p class="text-purple-500 font-semibold mt-2">75%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Frameworks -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Frameworks Backend</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold">Flask</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <p class="text-blue-600 font-semibold mt-2">85%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold">FastAPI</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <p class="text-blue-600 font-semibold mt-2">80%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold">Django</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                        <p class="text-blue-600 font-semibold mt-2">60%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-java text-4xl text-red-500 mb-4"></i>
+                        <h4 class="font-semibold">Spring Boot</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <p class="text-red-500 font-semibold mt-2">65%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">Bases de données</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold">MySQL</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <p class="text-blue-500 font-semibold mt-2">85%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold">PostgreSQL</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <p class="text-blue-500 font-semibold mt-2">80%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-database text-4xl text-red-500 mb-4"></i>
+                        <h4 class="font-semibold">Oracle DB</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                        <p class="text-red-500 font-semibold mt-2">40%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DevOps & Network -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 text-center">DevOps & Réseaux</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fab fa-docker text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-semibold">Docker</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 50%"></div>
+                        </div>
+                        <p class="text-blue-500 font-semibold mt-2">50%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-cogs text-4xl text-red-500 mb-4"></i>
+                        <h4 class="font-semibold">Ansible</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <p class="text-red-500 font-semibold mt-2">80</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-shield-alt text-4xl text-orange-500 mb-4"></i>
+                        <h4 class="font-semibold">pfSense</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <p class="text-orange-500 font-semibold mt-2">65%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-shield-alt text-4xl text-red-500 mb-4"></i>
+                        <h4 class="font-semibold">FortiGate</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-red-500 h-2.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                        <p class="text-red-500 font-semibold mt-2">40%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-network-wired text-4xl text-primary mb-4"></i>
+                        <h4 class="font-semibold">VLAN & Routage</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <p class="text-primary font-semibold mt-2">90%</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow hover-scale">
+                        <i class="fas fa-shield-alt text-4xl text-green-500 mb-4"></i>
+                        <h4 class="font-semibold">Sécurité Réseau</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                            <div class="bg-green-500 h-2.5 rounded-full" style="width: 50%"></div>
+                        </div>
+                        <p class="text-green-500 font-semibold mt-2">50%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gradient-to-r from-green-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Mes Projets</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow hover-scale">
+                    <img src="images/projet1.png" alt="Projet Ansible" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Automatisation du réseau avec Ansible</h3>
+                        <p class="text-gray-600 mb-4">Solution d'automatisation complète pour la configuration et la gestion des équipements réseau (Switch et Routeur Cisco, FortiGate), serveurs web et bases de données via Ansible</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow hover-scale">
+                    <img src="images/projet2.jpg" alt="Projet Chat IA" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Chat IA Personnalisé</h3>
+                        <p class="text-gray-600 mb-4">Clone personnalisé de ChatGPT développé avec Flask, intégrant l'API OpenAI. Interface moderne construite avec HTML, CSS (Tailwind) et JavaScript</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow hover-scale">
+                    <img src="images/projet3.png" alt="Projet 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Système de Monitoring</h3>
+                        <p class="text-gray-600 mb-4">Solution de monitoring réseau avec Prometheus et Grafana</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-red-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Contact</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Contact Information -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Contact Details -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">Informations de contact</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-primary text-xl w-8"></i>
+                                <div>
+                                    <p class="font-semibold">Téléphone professionnel</p>
+                                    <a href="tel:+24165591476" class="text-gray-600 hover:text-primary">+241 65 59 14 76</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp text-primary text-xl w-8"></i>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <a href="https://wa.me/22897841312" class="text-gray-600 hover:text-primary">+228 97 84 13 12</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-primary text-xl w-8"></i>
+                                <div>
+                                    <p class="font-semibold">Localisation</p>
+                                    <p class="text-gray-600">IAI-Siege, Libreville-GABON</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">Disponibilités</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">Dimanche</span>
+                                <span class="text-gray-600">14h - 20h</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">Lundi - Jeudi</span>
+                                <span class="text-gray-600">8h - 19h</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">Vendredi</span>
+                                <span class="text-gray-600">8h - 16h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-6">Envoyez-moi un message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nom</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors hover-scale">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex justify-end mb-8">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <i class="fas fa-times text-2xl"></i>
+                </label>
+            </div>
+            <nav class="flex flex-col items-center space-y-8 text-xl">
+                <a href="#about" class="block py-2 text-gray-600 hover:text-primary transition-colors">À propos</a>
+                <a href="#formation" class="block py-2 text-gray-600 hover:text-primary transition-colors">Formation</a>
+                <a href="#skills" class="block py-2 text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="#projects" class="block py-2 text-gray-600 hover:text-primary transition-colors">Projets</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
